@@ -468,9 +468,8 @@ border-radius: 16px;
 
 @media screen and (min-width:344px) and (max-width:890px) {
   .nav-item {
-   text-align: center;
   text-wrap:nowrap;
-  }
+  }  
 }
 
 @media screen and (min-width:891px) and (max-width:1700px) {
