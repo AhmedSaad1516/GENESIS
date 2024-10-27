@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GENESIS PRODUCTION</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="assets/vendors/Font Awesome/all.min.css">
     <link rel="stylesheet" href="assets/vendors/Bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+  <link rel="stylesheet" href="assets/css/nav-mob.css"> <!-- Include your own CSS file for custom styles -->
 
     <link rel="stylesheet" href="assets/css/main.css"> <!-- Include your own CSS file for custom styles -->
 </head>
@@ -18,48 +24,55 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div class="row fw-bold">
-                <div class="navbar-b col-7">
-                    <a class="navbar-brand" href="#"><span class="main-color">GENESIS</span> PRODUCTION</a>
-                </div>
-                <div class="col-7">
-                    DESIGN <span class="main-color">|</span> FABRICATE <span class="main-color">|</span> DELIVER
-                </div>
+          <div class="row fw-bold w-100">
+            <div class="navbar-b col-7">
+              <a class="navbar-brand" href="#"><span class="main-color">GENESIS</span> PRODUCTION</a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link nav-active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">WORK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CLIENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-
-                </ul>
-
+            <div class="col-7">
+              DESIGN <span class="main-color">|</span> FABRICATE <span class="main-color">|</span> DELIVER
             </div>
+          </div>
+          <!-- زر الشريط الجانبي يظهر فقط على شاشات الموبايل -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- الشريط الجانبي -->
+          <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+            <div class="offcanvas-header">
+              <!-- <h5 class="offcanvas-title" id="sidebarMenuLabel">GENESIS PRODUCTION</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item "><a class="texts" href="#">HOME</a></li>
+                <li class="nav-item "><a class="texts" href="#">ABOUT</a></li>
+                <li class="nav-item "><a class="texts" href="#">TEAM</a></li>
+                <li class="nav-item "><a class="texts" href="#">SERVICE</a></li>
+                <li class="nav-item "><a class="texts" href="#">WORK</a></li>
+                <li class="nav-item "><a class="texts" href="#">CLIENTS</a></li>
+                <li class="nav-item "><a class="texts" href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- القائمة الكاملة للشاشات الكبيرة -->
+          <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link nav-active" aria-current="page" href="#">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">WORK</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CLIENTS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
+    
+    
 
     <main id="main">
         <section class="sec-1">
@@ -226,92 +239,86 @@
                     </div>
                     <p>We believe in a <span class="highlight">diverse</span> range of personal to bring creative skills, thoughts, and <span class="highlight">ideas</span> to the table.</p>
                 </div>
-        
-                <div class="our-tema">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+
+                        <div class="our-tema-slide">
+                            <img src="assets/imgs/team.jpeg" alt="Team Member">
+                            <div class="team-member">
+                                <p class="highlight">DANA MANSOR</p>
+                                <p>Graphic Designer</p>
                             </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="our-tema-slide">
-                                    <img src="assets/imgs/team.jpeg" alt="Team Member">
-                                    <div class="team-member">
-                                        <p class="highlight">DANA MANSOR</p>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more slides as needed -->
                         </div>
-        
-                        <!-- Pagination -->
-                        <div class="swiper-pagination"></div>
                     </div>
+                   <div class="item">
+
+                        <div class="our-tema-slide">
+                            <img src="assets/imgs/img2.png" alt="Team Member">
+                            <div class="team-member">
+                                <p class="highlight">DANA MANSOR</p>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="our-tema-slide">
+                            <img src="assets/imgs/img2.png" alt="Team Member">
+                            <div class="team-member">
+                                <p class="highlight">DANA MANSOR</p>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="our-tema-slide">
+                            <img src="assets/imgs/img2.png" alt="Team Member">
+                            <div class="team-member">
+                                <p class="highlight">DANA MANSOR</p>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="our-tema-slide">
+                            <img src="assets/imgs/img2.png" alt="Team Member">
+                            <div class="team-member">
+                                <p class="highlight">DANA MANSOR</p>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+             
+
                 </div>
+                <!-- <div class="our-tema">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            
+                                <img src="assets/imgs/team.jpeg" alt="Team Member">
+                                <div class="team-member">
+                                    <p class="highlight">DANA MANSOR</p>
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </div>
+                      
+                        <div class="item">
+                        
+                                <img src="assets/imgs/img4.png" alt="Team Member">
+                                <div class="team-member">
+                                    <p class="highlight">DANA MANSOR</p>
+                                    <p>Graphic Designer</p>
+                             
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> -->
             </div>
         </section>
+        
         <!-- <section class="sec-4 my-5">
             <div class="container">
                 <div class="text-center">
@@ -1127,14 +1134,10 @@
                     <button class="btn myBtn px-3"><i class="fa-solid fa-arrow-right"></i></button>
                 </div> -->
                 <div class="our-tema">
-                    <div class="swiper-container2">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                         
-                          
-                          
-                         
-                            <div class="swiper-slide col-md-3">
+                    <div class="owl-carousel carousel-alt owl-theme">
+                        <div class="item">
+                            
+                     
                                 <div class="clientsCard col-lg-11 m-4 p-4">
                                     <div class="row">
                                         <div class="col-4">
@@ -1148,53 +1151,98 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                               
                             </div>
-                            <div class="swiper-slide col-md-3">
-                                <div class="clientsCard col-lg-11 m-4 p-4">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="assets/imgs/team.jpeg" class="img-fluid">
-                                        </div>
-                                        <div class="col-8 p-3">
-                                            <h3>Becky Nelson</h3>
-                                            <p class="highlight mb-2">Online Entrepreneur</p>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
-                                                libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide col-md-3">
-                                <div class="clientsCard col-lg-6 mb-4">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="assets/imgs/team.jpeg" class="img-fluid">
-                                        </div>
-                                        <div class="col-8 p-3">
-                                            <h3>Becky Nelson</h3>
-                                            <p class="highlight mb-2">Online Entrepreneur</p>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
-                                                libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more slides as needed -->
+                    
                         </div>
         
-                        <!-- Pagination -->
-                        <div class="swiper-pagination">
-                            <button class="btn myBtn-active px-3 swiper-button-prev">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-                            <button class="btn myBtn px-3 swiper-button-next">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                      
+                        <div class="item">
+                            
+                     
+                            <div class="clientsCard col-lg-11 m-4 p-4">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="assets/imgs/img2.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-8 p-3">
+                                        <h3>Becky Nelson</h3>
+                                        <p class="highlight mb-2">Online Entrepreneur</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
+                                            libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
+                                        </p>
+                                    </div>
+                                </div>
+                           
                         </div>
-                        
+                
+                    </div>
+
+                    <div class="item">
+                            
+                     
+                        <div class="clientsCard col-lg-11 m-4 p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/imgs/img6.png" class="img-fluid">
+                                </div>
+                                <div class="col-8 p-3">
+                                    <h3>Becky Nelson</h3>
+                                    <p class="highlight mb-2">Online Entrepreneur</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
+                                        libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
+                                    </p>
+                                </div>
+                            </div>
+                       
+                    </div>
+            
+                </div>
+
+
+                <div class="item">
+                            
+                     
+                    <div class="clientsCard col-lg-11 m-4 p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/imgs/img3.png" class="img-fluid">
+                            </div>
+                            <div class="col-8 p-3">
+                                <h3>Becky Nelson</h3>
+                                <p class="highlight mb-2">Online Entrepreneur</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
+                                    libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
+                                </p>
+                            </div>
+                        </div>
+                   
+                </div>
+        
+            </div>
+
+
+            <div class="item">
+                            
+                     
+                <div class="clientsCard col-lg-11 m-4 p-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/imgs/img1.png" class="img-fluid">
+                        </div>
+                        <div class="col-8 p-3">
+                            <h3>Becky Nelson</h3>
+                            <p class="highlight mb-2">Online Entrepreneur</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad voluptates tempore
+                                libero vitae pariatur corrupti nesciunt! Aliquid, dicta ducimus!
+                            </p>
+                        </div>
+                    </div>
+               
+            </div>
+    
+        </div>
+
                     </div>
                 </div>
                 
@@ -1208,17 +1256,19 @@
                         <h2> OUR <span class="highlight">TRUSTED CLIENTS</span></h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
+
+                
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
                         <img src="assets/imgs/logo4.png" class="img-fluid">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="item">
                         <img src="assets/imgs/logo3.png" class="img-fluid">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="item">
                         <img src="assets/imgs/logo2.png" class="img-fluid">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="item">
                         <img src="assets/imgs/logo1.png" class="img-fluid">
                     </div>
                 </div>
@@ -1308,15 +1358,16 @@
         
          
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script>
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerGroup: 1,
-    loop: true,
+    spaceBetween: 30,
+    
+    loop: false,
     autoplay: {
-        delay: 2000,
+        delay: 20000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -1330,7 +1381,7 @@ const swiper = new Swiper('.swiper-container', {
     breakpoints: {
         500: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 1,
         },
         768: {
             slidesPerView: 2,
@@ -1345,26 +1396,79 @@ const swiper = new Swiper('.swiper-container', {
 
 
         const swiper2 = new Swiper('.swiper-container2', {
-            slidesPerView: 2, // عرض 4 شرائح في نفس الوقت
-            spaceBetween: 0, // المسافة بين الشرائح
+            slidesPerView: 2,
+            spaceBetween: 0,
             autoplay: {
-                delay: 4000, // التغيير كل ثانية
-                disableOnInteraction: false, // يستمر في التشغيل حتى بعد تفاعل المستخدم
+                delay: 4000, 
+                disableOnInteraction: false, 
             },
             pagination: {
             el: '.swiper-pagination',
-            clickable: true, // السماح بالنقر على النقاط
-           
+            clickable: true,
         },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-        });
+        }); -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+   
+   $('.owl-carousel').owlCarousel({
+    margin: 20,
+    loop:true,
+    responsiveClass: true,
+    autoplay: true, // تفعيل التشغيل التلقائي
+    autoplayTimeout: 3000, // مدة 1 ثانية (1000 مللي ثانية)
+    autoplayHoverPause: true, // إيقاف التشغيل التلقائي عند التمرير بالماوس
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1700:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
+$('.owl-carousel.carousel-alt').owlCarousel({
+    margin: 20,
+    loop: true,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false
+        },
+        600: {
+            items: 3,
+            nav: false
+        },
+        1700: {
+            items: 1,
+            nav: true,
+            loop: false
+        }
+    }
+});
 
 
 
 
+            </script>
+            
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
