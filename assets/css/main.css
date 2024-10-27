@@ -208,8 +208,8 @@ h1 {
 
 .sec-3 {
   position: relative;
-  padding: 200px 0;
-  background-image: url("../imgs/landing.png");
+  padding: 200px 0;  
+  background-image: url(../imgs/landing.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
