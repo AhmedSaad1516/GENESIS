@@ -231,7 +231,7 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -240,7 +240,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -249,7 +249,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -267,7 +267,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -276,7 +276,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -285,7 +285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -294,7 +294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide col-md-3">
+                            <div class="swiper-slide ">
                                 <div class="our-tema-slide">
                                     <img src="assets/imgs/team.jpeg" alt="Team Member">
                                     <div class="team-member">
@@ -1310,27 +1310,38 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 4, // عرض 4 شرائح في نفس الوقت
-            spaceBetween: 20, // المسافة بين الشرائح
-            slidesPerGroup: 1, // تمرير شريحة واحدة في كل مرة
-            autoplay: {
-                delay: 4000, // التغيير كل ثانية
-                disableOnInteraction: false, // يستمر في التشغيل حتى بعد تفاعل المستخدم
-            },
-            pagination: {
-            el: '.swiper-pagination',
-            clickable: true, // السماح بالنقر على النقاط
-        
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 1,
+            spaceBetween: 10,
         },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-
-
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    }
+});
 
 
         const swiper2 = new Swiper('.swiper-container2', {
