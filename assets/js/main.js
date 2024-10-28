@@ -75,4 +75,13 @@ $('.owl-carousel.carousel-alt').owlCarousel({
                     backToTopButton.classList.remove("show");
                 }
             });
-            
+      
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    navLinks.forEach(nav => nav.classList.remove('nav-active'));
+    
+    this.classList.add('nav-active');
+  });
+});

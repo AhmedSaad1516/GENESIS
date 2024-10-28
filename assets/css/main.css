@@ -111,13 +111,13 @@
 }
 
 .nav-item .nav-active:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--main-color);
-    width: 40%;
-    height: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  width: 40%;
+  height: 2px;
 }
 /* ============ Section 1 ========== */
 
@@ -665,13 +665,39 @@ input {
 .footers-top i:hover {
   color: white;
   font-size: 20px; 
-  background-color: #750d0d;;
+  background-color: #750d0d;
   border-radius: 10px;
   margin-top: 50px;
   margin-right: 10px;
   padding: 13px;
 
 }
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #750d0d !important;
+}
+
+.nav-link:focus::before,
+.nav-link:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  background-color: var(--main-color);
+  width: 40%;
+  height: 2px;
+  transition: width 0.3s ease; 
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
 #backToTop {
   position: fixed;
   bottom: 20px; 
